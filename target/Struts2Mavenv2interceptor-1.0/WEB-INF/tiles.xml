@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>
+ 
+    <definition name="baseLayout" template="/WEB-INF/plantillas/plantilla.jsp">
+        <put-attribute name="titulo" value="Plantilla"/>
+        <put-attribute name="logo" value="/WEB-INF/plantillas/logo.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/plantillas/menu.jsp"/>
+        <put-attribute name="contenido" value="/WEB-INF/plantillas/vacio.jsp"/>
+        <put-attribute name="pie" value="/WEB-INF/plantillas/pie.jsp"/>
+    </definition>
+ 
+    <definition name="home" extends="baseLayout">
+        <put-attribute name="titulo"  value="Home"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/home.jsp"/>     
+    </definition>
+    
+    <definition name="admin_home" extends="baseLayout">
+        <put-attribute name="titulo"  value="Home"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/admin/home.jsp"/>     
+    </definition>
+    <definition name="spring" extends="baseLayout">
+        <put-attribute name="titulo"  value="Prueba Spring"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/admin/spring.jsp"/>     
+    </definition>
+ 
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="titulo"  value="Login"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/login.jsp"/>     
+    </definition>
+    <definition name="formulario" extends="baseLayout">
+        <put-attribute name="titulo"  value="Formulario"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/formulario.jsp"/>     
+    </definition>
+    <definition name="recibido" extends="baseLayout">
+        <put-attribute name="titulo"  value="Formulario"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/recibido.jsp"/>     
+    </definition>
+    <definition name="formularioajax" extends="baseLayout">
+        <put-attribute name="titulo"  value="Formulario Ajax"/>
+        <put-attribute name="contenido"   value="/WEB-INF/jsp/formularioajax.jsp"/>     
+    </definition>
+ 
+</tiles-definitions>

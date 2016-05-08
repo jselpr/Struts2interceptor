@@ -1,0 +1,18 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="admin" extends="default" namespace="/admin">          
+        <action name="home">
+            <result type="tiles">admin_home</result>
+        </action>
+        <action name="spring" class="springController">
+            <result type="tiles">spring</result>
+        </action>
+        <action name="spring2" class="springController2">
+            <result type="tiles">spring</result>
+        </action>
+        
+    </package>    
+</struts>
