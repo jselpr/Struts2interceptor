@@ -1,0 +1,1 @@
+Struts2Mavenv2interceptor
